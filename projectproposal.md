@@ -11,11 +11,14 @@
 - HTML
 - CSS
 - GitHub & GitHub Desktop
+- AI tool assistance
 
 These tools were chosen based on the experience the developer has with them.
 
 **Risk and Unknowns**
-- The developer has more to learn with CSS. There is some inexperience with flexbox. 
+- The developer has more to learn with CSS. 
+- There is some inexperience with flexbox. 
+
 
 
 
