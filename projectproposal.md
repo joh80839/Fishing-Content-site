@@ -10,12 +10,12 @@
 - Visual Studio
 - HTML
 - CSS
-- GitHub & Github Desktop
+- GitHub & GitHub Desktop
 
 These tools were chosen based on the experience the developer has with them.
 
 **Risk and Unknowns**
-- The developer has more to learn with CSS. There is some inexperince with flexbox. 
+- The developer has more to learn with CSS. There is some inexperience with flexbox. 
 
 
 
