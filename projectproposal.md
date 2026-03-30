@@ -16,7 +16,7 @@
 These tools were chosen based on the experience the developer has with them.
 
 **Risk and Unknowns**
-- The developer has more to learn with CSS. 
+- The developer still has more to learn about CSS. 
 - There is some inexperience with flexbox. 
 
 
