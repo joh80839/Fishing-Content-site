@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman";
+    background-color: white;
+    color: black;
+    
+}
+
+.nav-box{
+    display: flex;
+    justify-content: row;
+    gap: 20px;
+    height: 40px;
+}
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    padding: 20px
+}
+
+main {
+max-width: 1200px;
+margin: 0 auto;
+}
+
