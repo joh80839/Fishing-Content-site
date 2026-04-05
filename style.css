@@ -3,17 +3,22 @@
 }
 
 body {
-    font-family: "Times New Roman";
+    font-family: sans-serif;
     background-color: white;
     color: black;
-    
+    margin: 0;
 }
 
 .nav-box{
     display: flex;
     justify-content: row;
     gap: 20px;
-    height: 40px;
+    background-color: darkblue;
+    padding: 0px 8px;
+}
+.nav-box a{
+    text-decoration: none;
+    color: white;
 }
 
 .title-box{
@@ -23,7 +28,7 @@ body {
 }
 
 main {
-max-width: 1200px;
-margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
