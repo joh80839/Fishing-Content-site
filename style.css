@@ -32,3 +32,69 @@ main {
     margin: 0 auto;
 }
 
+.rods { 
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    gap: 0px;
+    margin-top: 20px;
+    flex-wrap:wrap;
+}
+
+.pic img{
+    object-fit:cover;
+    width: 300px;
+    height: 300px;
+}
+.rod-img {
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+}
+
+.pop {
+  transform: scale(1.2);
+}
+.pic {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  text-align: center;
+  align-items: center;
+}
+.pic p {
+  margin-top: 50px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.nav-box a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-box a:hover {
+  color: #ffd700; 
+}
+
+rod-label {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+}
+
+.rod-label {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+}
+
+.pic:hover .rod-label {
+  opacity: 1;
+  transform: translateY(0);
+}
