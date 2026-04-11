@@ -37,7 +37,7 @@ main {
     justify-content: center; 
     flex-direction: row;
     gap: 0px;
-    margin-top: 32px;
+    margin-top: 36px;
     flex-wrap:wrap;
 }
 
