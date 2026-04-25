@@ -10,3 +10,42 @@ images.forEach(img => {
   });
 });
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("pop");
+        } else {
+            entry.target.classList.remove("pop");
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+images.forEach(img => {
+    observer.observe(img);
+});
+
+const line = document.querySelector(".moving-line");
+const titleBox = document.querySelector(".title-box");
+
+let pos = 0;
+let speed = 2;
+let direction = 1;
+
+function animateLine() {
+    const maxWidth = titleBox.offsetWidth - line.offsetWidth;
+
+    pos += speed * direction;
+
+    if (pos >= maxWidth || pos <= 0) {
+        direction *= -1;
+    }
+
+    line.style.left = pos + "px";
+
+    requestAnimationFrame(animateLine);
+}
+
+animateLine();
+

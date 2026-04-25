@@ -24,7 +24,10 @@ body {
 .title-box{
     display: flex;
     justify-content: center;
-    padding: 20px
+    padding: 20px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
 }
 
 main {
@@ -109,3 +112,18 @@ rod-label {
   object-fit: contain;
   display: block;
 }
+.moving-line {
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    background-color: navy;
+    border-radius: 2px;
+}
+.nav-box2 {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
