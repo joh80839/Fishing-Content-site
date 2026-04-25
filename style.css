@@ -102,6 +102,10 @@ rod-label {
   opacity: 1;
   transform: translateY(0);
 }
+.pic.show-label .rod-label {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .rod-img2 {
   transition: transform 0.3s ease;

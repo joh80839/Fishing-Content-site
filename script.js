@@ -15,8 +15,10 @@ if (window.innerWidth <= 768) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("pop");
+                entry.target.parentElement.classList.add("show-label");
             } else {
                 entry.target.classList.remove("pop");
+                entry.target.parentElement.classList.remove("show-label");
             }
         });
     }, {
