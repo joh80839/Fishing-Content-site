@@ -10,21 +10,23 @@ images.forEach(img => {
   });
 });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("pop");
-        } else {
-            entry.target.classList.remove("pop");
-        }
+if (window.innerWidth <= 768) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("pop");
+            } else {
+                entry.target.classList.remove("pop");
+            }
+        });
+    }, {
+        threshold: 0.5
     });
-}, {
-    threshold: 0.5
-});
 
-images.forEach(img => {
-    observer.observe(img);
-});
+    images.forEach(img => {
+        observer.observe(img);
+    });
+}
 
 const line = document.querySelector(".moving-line");
 const titleBox = document.querySelector(".title-box");
