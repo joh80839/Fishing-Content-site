@@ -10,25 +10,14 @@ images.forEach(img => {
   });
 });
 
-if (window.innerWidth <= 768) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("pop");
-                entry.target.parentElement.classList.add("show-label");
-            } else {
-                entry.target.classList.remove("pop");
-                entry.target.parentElement.classList.remove("show-label");
-            }
-        });
-    }, {
-        threshold: 0.5
-    });
+images.forEach(img => {
+    img.addEventListener("touchstart", () => {
+        img.classList.toggle("pop");
 
-    images.forEach(img => {
-        observer.observe(img);
+        const picBox = img.closest(".pic");
+        picBox.classList.toggle("show-label");
     });
-}
+});
 
 const line = document.querySelector(".moving-line");
 const titleBox = document.querySelector(".title-box");

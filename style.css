@@ -92,12 +92,6 @@ main {
   transition: 0.3s ease;
 }
 
-.rod-label {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: 0.3s ease;
-}
-
 .pic:hover .rod-label {
   opacity: 1;
   transform: translateY(0);
