@@ -14,10 +14,9 @@ images.forEach(img => {
     img.addEventListener("click", (e) => {
         const picBox = img.closest(".pic");
 
-        if (!img.classList.contains("pop")) {
+        if (!picBox.classList.contains("active")) {
             e.preventDefault();
-            img.classList.add("pop");
-            picBox.classList.add("show-label");
+            picBox.classList.add("active");
         }
     });
 });

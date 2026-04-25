@@ -87,18 +87,23 @@ main {
 }
 
 .rod-label {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
 }
 
 .pic:hover .rod-label {
-  opacity: 1;
-  transform: translateY(0);
-}
-.pic.show-label .rod-label {
     opacity: 1;
     transform: translateY(0);
+}
+
+.pic.active .rod-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pic.active .rod-img {
+    transform: scale(1.08);
 }
 
 .rod-img2 {
