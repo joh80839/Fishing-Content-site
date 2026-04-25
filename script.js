@@ -25,6 +25,10 @@ window.addEventListener("pageshow", () => {
     document.querySelectorAll(".pic").forEach(pic => {
         pic.classList.remove("active");
     });
+
+    document.querySelectorAll(".rod-img").forEach(img => {
+        img.classList.remove("pop");
+    });
 });
 
 const line = document.querySelector(".moving-line");

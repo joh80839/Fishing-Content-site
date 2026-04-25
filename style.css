@@ -63,6 +63,7 @@ main {
 .pop {
   transform: scale(1.2);
 }
+
 .pic {
   display: flex;
   flex-direction: column;
@@ -106,32 +107,6 @@ main {
     transform: scale(1.08);
 }
 
-@media (max-width: 768px) {
-    .rods {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .pic {
-        width: 90%;
-        text-align: center;
-        overflow: visible;
-    }
-
-    .rod-img {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .rod-label {
-        margin-top: 15px;
-        position: relative;
-        z-index: 2;
-    }
-}
 .rod-img2 {
   transition: transform 0.3s ease;
   position: relative;
@@ -141,6 +116,7 @@ main {
   object-fit: contain;
   display: block;
 }
+
 .moving-line {
     position: absolute;
     bottom: 28px;
@@ -150,6 +126,7 @@ main {
     background-color: navy;
     border-radius: 2px;
 }
+
 .nav-box2 {
     position: fixed;
     bottom: 20px;
