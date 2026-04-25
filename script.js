@@ -11,11 +11,14 @@ images.forEach(img => {
 });
 
 images.forEach(img => {
-    img.addEventListener("touchstart", () => {
-        img.classList.toggle("pop");
-
+    img.addEventListener("click", (e) => {
         const picBox = img.closest(".pic");
-        picBox.classList.toggle("show-label");
+
+        if (!img.classList.contains("pop")) {
+            e.preventDefault();
+            img.classList.add("pop");
+            picBox.classList.add("show-label");
+        }
     });
 });
 
