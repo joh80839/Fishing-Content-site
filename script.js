@@ -21,6 +21,12 @@ images.forEach(img => {
     });
 });
 
+window.addEventListener("pageshow", () => {
+    document.querySelectorAll(".pic").forEach(pic => {
+        pic.classList.remove("active");
+    });
+});
+
 const line = document.querySelector(".moving-line");
 const titleBox = document.querySelector(".title-box");
 
