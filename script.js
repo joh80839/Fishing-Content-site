@@ -10,16 +10,18 @@ images.forEach(img => {
   });
 });
 
-images.forEach(img => {
-    img.addEventListener("click", (e) => {
-        const picBox = img.closest(".pic");
+if (window.innerWidth <= 768) {
+    images.forEach(img => {
+        img.addEventListener("click", (e) => {
+            const picBox = img.closest(".pic");
 
-        if (!picBox.classList.contains("active")) {
-            e.preventDefault();
-            picBox.classList.add("active");
-        }
+            if (!picBox.classList.contains("active")) {
+                e.preventDefault();
+                picBox.classList.add("active");
+            }
+        });
     });
-});
+}
 
 window.addEventListener("pageshow", () => {
     document.querySelectorAll(".pic").forEach(pic => {
