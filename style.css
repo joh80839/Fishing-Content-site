@@ -20,6 +20,10 @@ body {
     text-decoration: none;
     color: white;
 }
+.nav-box2 {
+    margin-top: 0;
+    margin-left: 20px;
+}
 
 .title-box{
     display: flex;
@@ -71,8 +75,13 @@ main {
   text-align: center;
   align-items: center;
 }
+
+.pic a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .pic p {
-  margin-top: 50px;
   width: 100%;
   white-space: nowrap;
 }
@@ -91,6 +100,8 @@ main {
     opacity: 0;
     transform: translateY(-10px);
     transition: 0.3s ease;
+    margin-top: 8px;
+    margin-bottom: 0px;
 }
 
 .pic:hover .rod-label {
@@ -99,6 +110,23 @@ main {
 }
 
 .pic.active .rod-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-text {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    margin-top: 0px;
+}
+
+.pic:hover .info-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pic.active .info-text {
     opacity: 1;
     transform: translateY(0);
 }
@@ -118,16 +146,31 @@ main {
 }
 
 .moving-line {
-    position: absolute;
-    bottom: 28px;
-    left: 0;
-    width: 120px;
+    margin-top: 24px;
+    width: 100px;
     height: 4px;
     background-color: navy;
-    border-radius: 2px;
+    position: relative;
+    animation: slide 2s infinite alternate ease-in-out;
+    transition: opacity 0.3s ease;
 }
 
-.nav-box2 {
-    margin-top: 0;
-    margin-left: 20px;
+@keyframes slide {
+    from {
+        left: 0;
+        transform: translateY(0);
+    }
+    to {
+        left: 180px;
+        transform: translateY(-1px);
+    }
 }
+
+.pic:hover .moving-line {
+    opacity: 0;
+}
+
+.pic.active .moving-line {
+    opacity: 0;
+}
+
