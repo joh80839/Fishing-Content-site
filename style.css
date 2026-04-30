@@ -152,7 +152,7 @@ main {
     background-color: navy;
     position: relative;
     animation: slide 2s infinite alternate ease-in-out;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.1s ease;
 }
 
 @keyframes slide {
