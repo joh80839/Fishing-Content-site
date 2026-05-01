@@ -5,7 +5,7 @@ pics.forEach(pic => {
     const img = pic.querySelector(".rod-img");
     const link = pic.querySelector("a");
 
-    // Desktop/laptop hover only
+    // Desktop/laptop hover 
     if (!isMobile) {
         pic.addEventListener("mouseenter", () => {
             img.classList.add("pop");
@@ -16,7 +16,7 @@ pics.forEach(pic => {
         });
     }
 
-    // Phone/tablet hover only
+    // Phone/tablet double tap
     if (isMobile) {
         link.addEventListener("click", (e) => {
             if (!pic.classList.contains("active")) {
