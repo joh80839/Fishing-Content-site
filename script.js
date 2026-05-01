@@ -1,32 +1,34 @@
 const pics = document.querySelectorAll(".pic");
+const isMobile = window.innerWidth <= 768;
 
 pics.forEach(pic => {
     const img = pic.querySelector(".rod-img");
     const link = pic.querySelector("a");
 
-    // Desktop hover
-    pic.addEventListener("mouseenter", () => {
-        img.classList.add("pop");
-    });
+    // Desktop/laptop hover only
+    if (!isMobile) {
+        pic.addEventListener("mouseenter", () => {
+            img.classList.add("pop");
+        });
 
-    pic.addEventListener("mouseleave", () => {
-        img.classList.remove("pop");
-    });
+        pic.addEventListener("mouseleave", () => {
+            img.classList.remove("pop");
+        });
+    }
 
-    // Mobile behavior
-    if (window.innerWidth <= 768) {
+    // Phone/tablet hover only
+    if (isMobile) {
         link.addEventListener("click", (e) => {
             if (!pic.classList.contains("active")) {
-                e.preventDefault(); // stop navigation on first tap
+                e.preventDefault();
                 pic.classList.add("active");
                 img.classList.add("pop");
             }
-            // second tap = link works normally
         });
     }
 });
 
-// Reset when coming back
+// Reset when returning with browser back button
 window.addEventListener("pageshow", () => {
     pics.forEach(pic => {
         const img = pic.querySelector(".rod-img");
