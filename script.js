@@ -2,7 +2,9 @@ const pics = document.querySelectorAll(".pic");
 
 pics.forEach(pic => {
     const img = pic.querySelector(".rod-img");
+    const link = pic.querySelector("a");
 
+    // Desktop hover
     pic.addEventListener("mouseenter", () => {
         img.classList.add("pop");
     });
@@ -10,28 +12,26 @@ pics.forEach(pic => {
     pic.addEventListener("mouseleave", () => {
         img.classList.remove("pop");
     });
+
+    // Mobile behavior
+    if (window.innerWidth <= 768) {
+        link.addEventListener("click", (e) => {
+            if (!pic.classList.contains("active")) {
+                e.preventDefault(); // stop navigation on first tap
+                pic.classList.add("active");
+                img.classList.add("pop");
+            }
+            // second tap = link works normally
+        });
+    }
 });
 
-if (window.innerWidth <= 768) {
-    images.forEach(img => {
-        img.addEventListener("click", (e) => {
-            const picBox = img.closest(".pic");
-
-            if (!picBox.classList.contains("active")) {
-                e.preventDefault();
-                picBox.classList.add("active");
-            }
-        });
-    });
-}
-
+// Reset when coming back
 window.addEventListener("pageshow", () => {
-    document.querySelectorAll(".pic").forEach(pic => {
-        pic.classList.remove("active");
-    });
+    pics.forEach(pic => {
+        const img = pic.querySelector(".rod-img");
 
-    document.querySelectorAll(".rod-img").forEach(img => {
+        pic.classList.remove("active");
         img.classList.remove("pop");
     });
 });
-
