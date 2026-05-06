@@ -257,6 +257,32 @@ main {
   margin-top: 5px;
 }
 
+@media (max-width: 600px) {
+  .uglystik-title h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .uglybox-1 .ustik-img {
+    max-width: 280px;
+  }
+
+  .uglybox-2 .ustik-img {
+    max-width: 100%;
+  }
+
+  .uglybox-1,
+  .uglybox-2 {
+    margin: 30px 0;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
 /* subpage 3 */
 
 .discovery-title h1 {
