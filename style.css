@@ -225,12 +225,6 @@ main {
   font-size: 3rem;
 }
 
-@media (max-width: 600px) {
-  .uglystik-title h1 {
-    font-size: 2rem;
-  }
-}
-
 .uglybox-1 .ustik-img {
   max-width: 400px;
 }
