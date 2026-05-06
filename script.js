@@ -28,7 +28,7 @@ pics.forEach(pic => {
     }
 });
 
-// Reset when returning with browser back button
+// Pictures reset when using the browser back button
 window.addEventListener("pageshow", () => {
     pics.forEach(pic => {
         const img = pic.querySelector(".rod-img");
