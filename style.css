@@ -337,13 +337,22 @@ main {
 
 /* about page */
 
-.about-pic {
-  width: 350px;
-  height: 350px;
-  object-fit: contain;
-  display: block;
+.about-pic img {
   width: fit-content;
+  max-width: 400px;
+  height: 400px;
   margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+
+  .about-pic img {
+    max-width: 300px;
+    height: auto;
+  }
+
 }
 
 .about-title h1 {
@@ -352,6 +361,5 @@ main {
 }
 
 .about-text{
-    margin: 16px 0;
-    
+    margin: 8px 0;  
 }
