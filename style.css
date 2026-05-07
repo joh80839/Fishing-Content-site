@@ -349,7 +349,7 @@ main {
 @media (max-width: 600px) {
 
   .about-pic img {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
   }
 
