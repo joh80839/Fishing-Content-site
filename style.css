@@ -216,7 +216,7 @@ main {
 }
 
 .source-box {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 /* subpage 2 */
@@ -234,7 +234,7 @@ main {
 
 .uglybox-1,
 .uglybox-2 {
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .uglybox-1 .pic-box, 
@@ -301,7 +301,11 @@ main {
 
 .discovery-box1,
 .discovery-box2 {
-  margin: 40px 0;
+  margin-top: 40px 0;
+}
+
+.discovery-box2 {
+    margin-bottom: 60px;
 }
 
 .discovery-box1 .pic-box,
