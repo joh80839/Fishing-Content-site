@@ -346,15 +346,6 @@ main {
   object-fit: contain;
 }
 
-@media (max-width: 600px) {
-
-  .about-pic img {
-    max-width: 250px;
-    height: auto;
-  }
-
-}
-
 .about-title h1 {
  font-size: 3rem;
  margin: 8px 0;
@@ -362,4 +353,19 @@ main {
 
 .about-text{
     margin: 8px 0;  
+}
+
+@media (max-width: 600px) {
+  .about-title h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .about-pic img {
+    max-width: 250px;
+    height: auto;
+  }
+
 }
