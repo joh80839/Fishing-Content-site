@@ -15,7 +15,7 @@ You can access this website by clicking the link below:
 
 https://joh80839.github.io/Fishing-Content-site/index.html
 
-## What's changed?
+## What's Changed?
 
 Project 01 had a main page that included a title with a short moving line feature that traveled beneath it, and a top blue navigation bar with words "Home" and "About" that linked to their corresponding webpages. The "About" page leads to an unfinished page. The center of the main page included three pictures of rod and reel combos with interactive hover features that caused the pictures to expand and reveal their product names. These pictures were linked to webpages that said: "To be Continued". 
 
